@@ -1,0 +1,49 @@
+"use client"
+import Link from 'next/link'
+
+export default function Navbar() {
+  return (
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
+       
+        <Link href="/" className="flex items-center gap-2 text-black hover:text-blue-700 transition-colors duration-300">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-7 h-7 text-blue-600"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path fillRule="evenodd" d="M14 4.5V14..." />
+          </svg>
+          <span className="text-2xl font-bold tracking-tight">PDF Annotator</span>
+        </Link>
+
+  
+        <div className="flex gap-6 items-center">
+          {[
+            { href: "#hero", label: "Hero" },
+            { href: "#features", label: "Features" },
+            { href: "#cta", label: "CTA" },
+          ].map(({ href, label }) => (
+            <a
+              key={label}
+              href={href}
+              className="relative  text-black text-lg font-medium transition-all duration-300 hover:text-blue-600 group"
+            >
+              {label}
+              <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
+
+          <Link
+            href="/editor"
+            className="relative text-black text-lg font-medium transition-all duration-300 hover:text-blue-600 group"
+          >
+            Editor
+            <span className="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+        </div>
+      </div>
+    </nav>
+  )
+}
