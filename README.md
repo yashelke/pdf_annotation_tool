@@ -39,7 +39,6 @@ Open http://localhost:3000 to view the landing page.
 💡 The /editor route is a placeholder and does not need to be functional.
 
 📁 Project Structure
-
 /
 ├── app/                # App Router directory with main landing page (page.js)
 ├── components/         # Reusable sections: Hero, Features, CTA, Footer
