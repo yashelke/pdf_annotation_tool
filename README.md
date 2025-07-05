@@ -1,126 +1,50 @@
-
-
----
-
-```markdown
-# 📄 PDF Annotation Tool - Landing Page
-
-This is a [Next.js](https://nextjs.org) project created for a **React Internship Assignment**. The goal of the project is to build a clean, responsive, and functional landing page that introduces a browser-based PDF Annotation Tool and encourages users to try it.
-
----
-
+PDF Annotation Tool
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org) with the **App Router**
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Language**: JavaScript (no TypeScript)
-- **Font**: [Geist](https://vercel.com/font) via [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+- **Font**: [Geist](https://vercel.com/font) using `next/font`
 
 ---
 
-## 📁 Project Structure
+## ⚙️ Setup Instructions
 
-```
+To run the project locally, follow the steps below:
 
-/
-├── app/                # App Router entry (page.js)
-├── components/         # Reusable sections: Hero, Features, CTA, Footer
-├── public/             # Static files (images, etc.)
-├── styles/             # Global CSS (if used)
-├── tailwind.config.js  # Tailwind config
-├── postcss.config.js   # PostCSS config
-└── README.md           # Documentation
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/pdf-annotation-tool.git
+   cd pdf-annotation-tool
+Install Dependencies
+Make sure Node.js v18 or higher is installed.
 
-````
-
----
-
-## 🚀 Getting Started
-
-Follow the steps below to set up the project locally:
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/pdf-annotation-tool.git
-cd pdf-annotation-tool
-````
-
-### 2. Install Dependencies
-
-Make sure you have **Node.js v18+** installed.
-
-```bash
+bash
+Copy
+Edit
 npm install
 # or
 yarn install
-```
+Start the Development Server
 
-### 3. Start the Development Server
-
-```bash
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit in Browser
+Open http://localhost:3000 to view the landing page.
 
-Visit [http://localhost:3000](http://localhost:3000) in your browser. You should see the landing page running locally.
+💡 The /editor route is a placeholder and does not need to be functional.
 
----
+📁 Project Structure
 
-## 🧩 Included Sections
-
-✅ **Hero Section**
-With headline, subheading, and a button linking to the `/editor` route (placeholder).
-
-✅ **Features Section**
-Showcases 3–4 key features of the annotation tool (e.g., Highlight, Comment, Draw, Upload).
-
-✅ **Call to Action**
-Encourages users to get started or upload a PDF (non-functional input).
-
-✅ **Footer**
-Includes project name, GitHub placeholder, and copyright.
-
-> **Note**: The `/editor` route does not need to be functional per the assignment requirements.
-
----
-
-## 🌐 Deployment
-
-To deploy the app, you can use [Vercel](https://vercel.com/), the recommended platform by the creators of Next.js.
-
-Read the official deployment guide here: [Next.js Deployment Docs](https://nextjs.org/docs/app/building-your-application/deploying)
-
----
-
-## 📑 Assignment Guidelines Checklist
-
-* ✅ Built with App Router
-* ✅ Tailwind CSS used for semantic styling
-* ✅ Responsive on both desktop and mobile
-* ✅ Code quality with reusable, organized components
-* ✅ Clean and user-friendly UI
-
----
-
-## 📬 Submission Info
-
-* This project is submitted as a part of the **React Internship Application Assignment**.
-* Please refer to the `page.js` file inside `/app` to view the main layout logic.
-* GitHub repo / ZIP file as required by submission guidelines.
-
----
-
-**© 2025 - PDF Annotation Tool — All Rights Reserved**
-
-```
-
----
-
-Let me know your GitHub repo link and I’ll update it in the README for you. Or if you want a `.md` file download, I can provide that too.
-```
+/
+├── app/                # App Router directory with main landing page (page.js)
+├── components/         # Reusable sections: Hero, Features, CTA, Footer
+├── public/             # Static assets (images, icons, etc.)
+├── styles/             # Global styles (if any)
+├── tailwind.config.js  # Tailwind CSS configuration
+├── postcss.config.js   # PostCSS configuration
+└── README.md           # Project documentation
