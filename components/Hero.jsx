@@ -1,8 +1,6 @@
-
 export default function Hero() {
   return (
     <section id="hero" className="bg-red-300 text-center py-20 px-6 md:px-10">
-
       <div className="flex justify-center mb-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +15,10 @@ export default function Hero() {
         </svg>
       </div>
 
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">Annotate PDFs with Ease</h1>
-      <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-xl mx-auto">
+      <h1 className="text-4xl md:text-5xl text-black font-bold mb-4">
+        Annotate PDFs with Ease
+      </h1>
+      <p className="text-lg md:text-xl text-black mb-6 max-w-xl mx-auto">
         A fast and easy-to-use browser-based PDF annotation tool.
       </p>
 
@@ -29,5 +29,5 @@ export default function Hero() {
         Try the Editor
       </a>
     </section>
-  )
+  );
 }
