@@ -19,17 +19,13 @@ To run the project locally, follow the steps below:
 Install Dependencies
 Make sure Node.js v18 or higher is installed.
 
-bash
-Copy
-Edit
+
 npm install
 # or
 yarn install
 Start the Development Server
 
-bash
-Copy
-Edit
+
 npm run dev
 # or
 yarn dev
